@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 # e_commerce_website
 
@@ -76,3 +77,6 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 =======
 # ecommerce_website
 >>>>>>> 5b49e1bd1a70189d58ad218b5993ba6135eaf5fc
+=======
+# ecom_user
+>>>>>>> 9eef8c7e02d5baa61134369a7d30b5ae3b3887f8
