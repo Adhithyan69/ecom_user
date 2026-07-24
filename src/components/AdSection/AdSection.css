@@ -1,0 +1,41 @@
+.ad-section {
+  @apply container mx-auto px-4 md:px-12 lg:px-24 py-6 grid grid-cols-1 md:grid-cols-3 gap-6;
+}
+
+.ad-card {
+  @apply relative overflow-hidden rounded-lg shadow-lg h-48;
+}
+
+.ad-card__image {
+  @apply w-full h-full object-cover transition-transform duration-500 ease-in-out;
+}
+
+.ad-card:hover .ad-card__image {
+  @apply transform scale-110;
+}
+
+.ad-card__content {
+  @apply absolute inset-0 bg-black bg-opacity-40 flex flex-col items-start justify-end p-4 text-white;
+}
+
+.ad-card__title {
+  @apply text-xl font-bold;
+}
+
+.ad-card__description {
+  @apply mt-1 mb-3 text-sm;
+}
+
+.ad-card__button {
+  @apply font-semibold text-white relative;
+  /* Underline effect */
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size 0.3s;
+}
+
+.ad-card__button:hover {
+  background-size: 100% 2px;
+}

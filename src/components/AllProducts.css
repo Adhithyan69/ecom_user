@@ -1,0 +1,27 @@
+.all-products-section {
+  @apply container mx-auto px-4 md:px-12 lg:px-24;
+}
+
+.all-products-section__title {
+  @apply text-xl font-semibold mb-4;
+  position: relative;
+  padding-bottom: 1.5rem;
+}
+
+.all-products-section__title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background: linear-gradient(to right, #3a57fd 120px, #d1d5db 120px); /* Adjusted for "All Products" */
+}
+
+.all-products-section__footer {
+  @apply text-center mt-8;
+}
+
+.all-products-section__view-all-btn {
+  @apply bg-accent text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors duration-300;
+}
