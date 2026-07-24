@@ -1,0 +1,70 @@
+/* Outer wrapper — adds padding around the blue block */
+.service-block-wrapper {
+  @apply px-4 md:px-8 lg:px-20 py-10;
+}
+
+/* Blue section */
+.service-block-section {
+  @apply bg-blue-600 py-0.5 container mx-auto rounded-xl shadow-lg;
+}
+
+/* Outer scroll container — sets padding and hides overflow */
+.service-block-outer {
+  padding-left: 16px;
+  padding-right: 16px;
+  overflow-x: hidden; /* hides track outside padding */
+}
+
+/* Inner scroll area — actually scrollable */
+.service-block-container {
+  display: flex;
+  gap: 1.2rem;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  padding-bottom: 10px; /* space for scrollbar */
+}
+
+/* Scrollbar styling */
+.service-block-container::-webkit-scrollbar {
+  height: 7px;
+}
+
+.service-block-container::-webkit-scrollbar-track {
+  background: rgba(128, 128, 128, 0.3);
+  border-radius: 10px;
+}
+
+.service-block-container::-webkit-scrollbar-thumb {
+  background: #1d4ed8;
+  border-radius: 10px;
+  /* border-left: 8px solid transparent;
+  border-right: 8px solid transparent; */
+  background-clip: content-box;
+}
+
+/* Card */
+.service-card {
+  @apply flex items-center gap-3 bg-blue-600 text-white rounded-lg p-4 transition-transform duration-300 hover:scale-[1.02];
+  flex: 0 0 260px;
+}
+
+@media (min-width: 1024px) {
+  .service-card {
+    flex: 1;
+    max-width: 280px;
+  }
+}
+
+.service-card__icon {
+  @apply bg-white text-blue-600 rounded-full p-2 flex items-center justify-center shadow-md;
+  flex-shrink: 0;
+}
+
+.service-card__title {
+  @apply font-semibold text-sm md:text-base text-white;
+}
+
+.service-card__description {
+  @apply text-xs md:text-sm text-white opacity-90;
+}
